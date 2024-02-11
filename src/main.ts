@@ -8,16 +8,6 @@ async function bootstrap() {
 
   app.enableCors();
 
-  // app.useGlobalPipes(
-  //   new ValidationPipe({
-  //     whitelist: true,
-  //     transform: true,
-  //     transformOptions: {
-  //       enableImplicitConversion: true,
-  //     },
-  //   }),
-  // );
-
   app.enableVersioning({
     type: VersioningType.URI,
     defaultVersion: '1',
